@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animals Description</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css/navigate.css">
+    <link rel="stylesheet" href="css/animal.css">    
+</head>
+<body>
+  <nav>  
+    <div>
+        <a class="logo" href="index.html"><span>PA</span>ZUU</a>                          
+    </div>                                      
+    <div class="nav-menu">
+      <span class="blur"></span>
+      <span class="transparent"></span>
+      <ul>                                                                              
+        <li class="dropdown">
+            <a href="javascript:void(0)">WILDLIFE</a> 
+            <div class="dropdown-content">                                                       
+                <a href="animal.html">ANIMALS</a>                              
+                <a href="ecosystem.html">ECOSYSTEMS</a>
+                <a href="extinct.html">EXTINCT</a>                                                 
+            </div>
+        </li>
+        <li>
+            <a href="news.html">NEWS</a>
+        </li>
+        <li>
+            <a href="about.html">ABOUT US</a>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">MORE</a> 
+          <div class="dropdown-content">                                                       
+              <a href="shop.html">SHOP</a>                              
+              <a href="publish.html">PUBLISH</a>
+              <a href="gallery.html">GALERRY ANIMALS</a>                                                 
+              <a href="donate.html">DONATE</a>                                                 
+          </div>
+        </li>                
+        <li><a href="#"><button class="btn-login">Login</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+   
+  <!-- menu mobile -->
+  <div style="font-size:30px;cursor:pointer" id="menuBar" onclick="openNav()">&#9776;</div>
+  <div id="menu-mobile" class="nav-mobile">     
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>        
+    <ul>                                                                              
+      <li class="details">
+          <a href="javascript:void(0)">WILDLIFE</a> 
+          <div class="details-items">                                                       
+            <a href="animal.html">ANIMALS</a>                              
+            <a href="ecosystem.html">ECOSYSTEMS</a>
+            <a href="extinct.html">EXTINCT</a>                                                 
+          </div>
+      </li>
+      <li>
+          <a href="news.html">NEWS</a>
+      </li>
+      <li>
+          <a href="about.html">ABOUT US</a>
+      </li>  
+      <button class="btn-login">Login</button>
+    </ul> 
+  </div>    
+    
+    <!-- slideshow -->    
+  <!-- mamalia section   -->    
+  <div class="slideshow">
+    <div class="mySlides">      
+      <img src="asset/img/elephant.jpg">
+      <div class="title">
+        <h3 class="subtitle">AFRICAN</h3>         
+        <svg xmlns="http://www.w3.org/2000/svg" width="784" height="202" viewBox="0 0 784 202" class="blend">
+          <rect id="rectangle" x="1" y="1" width="380" height="202" fill="#fff"/>
+          <text id="animal">ELEPHANT</text>
+        </svg>
+      </div>                          
+    </div>
+  
+    <div class="mySlides">
+      <img src="asset/img/tiger.jpg">
+      <div class="title">
+        <h3 class="subtitle">SUMATRAN</h3>        
+        <svg xmlns="http://www.w3.org/2000/svg" width="784" height="202" viewBox="0 0 784 202" class="blend">
+          <rect id="rectangle" x="1" y="1" width="400" height="202" fill="#fff"/>
+          <text id="animal">TIGER</text>
+        </svg>
+      </div>
+    </div>
+  
+    <div class="mySlides">
+      <img src="asset/img/gorilla.jpg">
+      <div class="title">
+        <h3 class="subtitle">MOUNTAIN</h3>        
+        <svg xmlns="http://www.w3.org/2000/svg" width="784" height="202" viewBox="0 0 784 202" class="blend">
+          <rect id="rectangle" x="1" y="1" width="400" height="202" fill="#fff"/>
+          <text id="animal">GORILLA</text>
+        </svg>                  
+      </div>
+    </div>
+      
+    <div class="mySlides">
+      <img src="asset/img/wolf.jpg">
+      <div class="title">
+        <h3 class="subtitle">KUTUB</h3>        
+        <svg xmlns="http://www.w3.org/2000/svg" width="784" height="202" viewBox="0 0 784 202" class="blend">
+          <rect id="rectangle" x="1" y="1" width="400" height="202" fill="#fff"/>
+          <text id="animal">WOLF</text>
+        </svg>                  
+      </div>
+    </div>
+  
+    <div class="mySlides">
+      <img src="asset/img/rhino.jpg">
+      <div class="title">
+        <h3 class="subtitle">BLACK</h3>        
+        <svg xmlns="http://www.w3.org/2000/svg" width="784" height="202" viewBox="0 0 784 202" class="blend">
+          <rect id="rectangle" x="1" y="1" width="400" height="202" fill="#fff"/>
+          <text id="animal">RHINO</text>
+        </svg>
+      </div>
+    </div>      
+    
+    <section class="caption">     
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos aliquid enim hic in maiores, 
+        culpa soluta eum? Quaerat alias, natus id obcaecati ex reprehenderit neque eum ipsa consequatur nam!
+      </p>  
+      <button class="learn-btn">Learn More</button>
+      <button class="class-btn">Class</button>                     
+    </section>
+
+    <section class="tab-number">
+      <div class="num">
+        <p></p>
+        <p></p> 
+      </div>
+      <div class="tab"></div>
+      <div id="slider"></div>
+    </section>    
+
+    <section class="tipe">
+      <p>Herbivora</p>
+      <h2>Mammals</h2>
+
+      <div class="slide-btn">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <i class="dot"></i>
+        <a class="next" onclick="plusSlides(1)">❯</a>            
+      </div>
+    </section>
+    
+    <div class="container list-img">
+      <div class="row row-cols-lg-1">
+        <div class="col mb-2">
+          <img class="demo cursor" src="asset/img/elephant.jpg" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+        <div class="col mb-2">
+          <img class="demo cursor" src="asset/img/tiger.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+        <div class="col mb-2">
+          <img class="demo cursor" src="asset/img/gorilla.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="col mb-2">
+          <img class="demo cursor" src="asset/img/wolf.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="col mb-2">
+          <img class="demo cursor" src="asset/img/rhino.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>            
+      </div>      
+    </div>
+  </div>
+  
+
+  <div class="container-fluid tab-desc"> 
+    <div class="row justify-content-between">
+      <div class="col">
+        <h1>African Elephant</h1> 
+      </div>
+      <div class="col">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+      </div>
+    </div>            
+
+    <div class="row">
+      <div class="col-3 m">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="active" id="list-history-list" data-toggle="list" href="#list-history" role="tab" aria-controls="history">History</a>
+          <a id="list-status-list" data-toggle="list" href="#list-status" role="tab" aria-controls="status">Conversation Status</a>
+          <a id="list-species-list" data-toggle="list" href="#list-species" role="tab" aria-controls="species">Species</a>
+          <a id="list-behavior-list" data-toggle="list" href="#list-behavior" role="tab" aria-controls="behavior">Behavior & Ecology</a>
+          <a id="list-character-list" data-toggle="list" href="#list-character" role="tab" aria-controls="character">Characteristics</a>
+          <a id="list-distribution-list" data-toggle="list" href="#list-distribution" role="tab" aria-controls="distribution">Distribution</a>
+          <a id="list-threat-list" data-toggle="list" href="#list-threat" role="tab" aria-controls="threat">Population & Threat</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade mt-5 show active" id="list-history" role="tabpanel" aria-labelledby="list-history-list">
+            <h3>History</h3>
+            <p class="w-50">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos aliquid enim hic in maiores, culpa soluta eum? Quaerat alias, natus id 
+              obcaecati ex reprehenderit neque eum ipsa consequatur nam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos aliquid enim 
+              hic in maiores, culpa soluta eum? Quaerat alias, natus id obcaecati ex reprehenderit neque eum ipsa consequatur nam!
+            </p>
+          </div>
+          <div class="tab-pane fade" id="list-status" role="tabpanel" aria-labelledby="list-status-list">
+            <h3>Conservation Status</h3>
+            <div class="statusBar px-5 pt-5 pb-4 mb-5 ml-4">
+              <div class="row mb-4 justify-content-center">
+                <div class="col-3 mr-4">
+                  <div class="row outline-wrap p-1">
+                    <div class="col circle mr-3">EX</div>
+                    <div class="col circle">EW</div>
+                  </div>                                 
+                </div>
+
+                <div class="col-4 mr-4">
+                  <div class="row big-wrap p-1">
+                    <div class="col circle mr-3">CR</div>
+                    <div class="col circle mr-3">EN</div>
+                    <div class="col circle pink">VU</div>
+                  </div>
+                </div>
+
+                <div class="col-3">
+                  <div class="row outline-wrap blue p-1">
+                    <div class="col circle mr-3">NT</div>
+                    <div class="col circle">LC</div>                    
+                  </div>
+                </div>              
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-4 list-status">
+                  <ul>
+                    <li class="title">Extinct</li>
+                    <li>Extinct (EX)</li>
+                    <li>Extinct in The Wild (EW)</li>                    
+                  </ul>
+                </div>
+                <div class="col-4 list-status">
+                  <ul>
+                    <li class="title">Threatened</li>
+                    <li>Critically Endangered (CR)</li>
+                    <li>Endangered (EN)</li>
+                    <li>Vulnerable (VU)</li>
+                  </ul>
+                </div>
+                <div class="col-4 list-status">
+                  <ul>
+                    <li class="title">Lower Risk</li>
+                    <li>Near Threatened (NT)</li>
+                    <li>Least Concern (LC)</li>                  
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row ml-4"> 
+              <div class="col-5">
+                <h5>Vulnerable</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Asperiores nulla nesciunt at quasi deleniti eos iste rerum voluptate quam 
+                  quae vero quisquam hic natus qui, impedit iusto incidunt eum sunt!
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                </p>
+              </div>             
+            </div>
+          </div>
+
+          <div class="tab-pane fade species" id="list-species" role="tabpanel" aria-labelledby="list-species-list">
+            <h3>Species</h3>
+            <ul class="ml-4">
+              <li class="life">Loxodonta African</li>
+              <li class="life">Loxodonta Cyclotis</li>
+              <li>Loxodonta Adaurora</li>
+              <li>Loxodonta Kararae</li>
+              <li>Loxodonta Atlantica</li>
+              <li>Loxodonta Angammensis</li>
+              <li>Loxodonta Exoptata</li>                            
+            </ul>
+
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-2 mr-3">
+                  <span class="pin grey"></span>
+                  <p>Extinct</p>
+                </div>
+                <div class="col-2 mr-3">
+                  <span class="pin red"></span>
+                  <p>Threated</p>
+                </div>
+                <div class="col-2 mr-3">
+                  <span class="pin green"></span>
+                  <p>Survive</p>                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="list-behavior" role="tabpanel" aria-labelledby="list-behavior-list">
+            <h3>Behavior & Ecology</h3>             
+            <div class="container">
+              <div class="row">
+                <div class="col-4 mx-5 mb-4 p-0">
+                  <h5>Family</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Molestias iste porro, labore sapiente ullam repellat eligendi 
+                    mollitia quia eaque quis tempora, sit laborum ex ducimus cupiditate vitae tenetur. 
+                    Ipsa, deleniti.
+                  </p>
+                </div>
+                <div class="col-4 mx-5 mb-4 p-0">
+                  <h5>Feeding</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Molestias iste porro, labore sapiente ullam repellat eligendi 
+                    mollitia quia eaque quis tempora, sit laborum ex ducimus cupiditate vitae tenetur. 
+                    Ipsa, deleniti.
+                  </p>
+                </div>
+                <div class="col-4 mx-5 my-4 p-0">
+                  <h5>Intelligence</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Molestias iste porro, labore sapiente ullam repellat eligendi 
+                    mollitia quia eaque quis tempora, sit laborum ex ducimus cupiditate vitae tenetur. 
+                    Ipsa, deleniti.
+                  </p>
+                </div>
+                <div class="col-4 mx-5 my-4 p-0">
+                  <h5>Reproduction</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Molestias iste porro, labore sapiente ullam repellat eligendi 
+                    mollitia quia eaque quis tempora, sit laborum ex ducimus cupiditate vitae tenetur. 
+                    Ipsa, deleniti.
+                  </p>
+                </div>                                 
+              </div>          
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-character" role="tabpanel" aria-labelledby="list-character-list">
+            <h3>Characteristics</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col-4 mx-5 mb-4 p-0">
+                  <h5>Skin</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint odit praesentium porro eveniet ea 
+                    error ratione, voluptatum provident? Eos velit explicabo distinctio quis doloremque libero cum iste,             
+                  </p>
+                </div>
+                <div class="col-4 mx-5 mb-4 p-0">
+                  <h5>Tusks</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint odit praesentium porro eveniet ea 
+                    error ratione, voluptatum provident? Eos velit explicabo distinctio quis doloremque libero cum iste,
+                     maxime suscipit nesciunt.
+                  </p>
+                </div>
+                <div class="col-4 mx-5 my-4 p-0">
+                  <h5>Ears</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint odit praesentium porro eveniet ea 
+                    error ratione, voluptatum provident? Eos velit explicabo distinctio quis doloremque libero cum iste,
+                     maxime suscipit nesciunt.
+                  </p>
+                </div>
+                <div class="col-4 mx-5 my-4 p-0">
+                  <h5>Molars</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint odit praesentium porro eveniet ea 
+                    error ratione, voluptatum provident? Eos velit explicabo distinctio 
+                  </p>
+                </div>
+                <div class="col-4 mx-5 my-4 p-0">
+                  <h5>Trunk</h5>
+                  <p class="m-0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint odit praesentium porro eveniet ea 
+                    error ratione.
+                  </p>
+                </div>               
+                <div class="col-4 mx-5 my-4 p-0 align-items-center">
+                  <h5>Body Size</h5>                 
+                  <p class="float">Height </p><span class="line-space"></span><p> 3.2 - 4 m</p>            
+                  <p class="float">Weight </p><span class="line-space"></span><p> 6 - 8 tonnes</p>
+                </div>              
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-distribution" role="tabpanel" aria-labelledby="list-distribution-list">            
+            <h3>Distribution</h3>
+            <div class="ml-4">
+              <h5>Origin</h5>
+              <ul>
+                <li>Sub-Saharan Africa</li>
+                <li>Sahelian Scrubland</li>
+                <li>Arid</li>
+                <li>Tropical Rainforest</li>
+                <li>Mopane</li>
+                <li>Miombo Woodlands</li>
+              </ul>
+  
+              <h5 class="mt-5">Distribution</h5>
+              <ul>
+                <li>Hongkong</li>
+                <li>Japan</li>
+              </ul>              
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-threat" role="tabpanel" aria-labelledby="list-threat-list">
+            <h3>Population & Threats</h3>
+            <div class="ml-4">
+              <img src="asset/img/chart.png" width="65%">
+              
+              <div class="row mt-5">
+                <div class="col-5">
+                  <h5>Threats</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempore cumque impedit 
+                    repellat commodi, deserunt placeat, nobis assumenda dolorem consectetur odit est ratione 
+                    iure, corporis eum perspiciatis facilis odio modi.
+                  </p>
+                  <p class="percentage">Decrease <span class="line-space"></span> at 60% in 25 years</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid tab-class">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <div class="row justify-content-between my-4 mx-3">
+      <div class="col-1">
+        <h1>Classes</h1>
+      </div>
+      <div class="col-4 p-0 search-bar mr-5">        
+        <input type="text" class="search-field" placeholder="Search...">
+        <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+
+    <h5>VERTEBRATA</h5>
+    <div class="row row-cols-3 justify-content-center align-items-center">
+      <div class="col-3 m-4 cover">
+        <img src="asset/img/tiger.jpg">  
+        <h3>Mammals</h3>
+      </div>
+      <div class="col-3 m-4 cover">
+        <img src="asset/img/penguin.jpg">  
+        <h3>Aves</h3>
+      </div>
+      <div class="col-3 m-4 cover">
+        <img src="asset/img/nemo.jpg">  
+        <h3>Pisces</h3>
+      </div>
+      <div class="col-3 m-4 cover">
+        <img src="asset/img/turle.jpg">  
+        <h3>Amphibia</h3>
+      </div>
+      <div class="col-3 m-4 cover">
+        <img src="asset/img/chameleon.jpg">  
+        <h3>Reptilia</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/animal.js"></script>    
+</body>
+</html>
+
+

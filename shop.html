@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop</title>
+
+     <!-- css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" href="css/navigate.css">
+     <link rel="stylesheet" href="css/shop.css"> 
+</head>
+<body>
+    <nav>  
+        <div>
+            <a class="logo" href="index.html"><span>PA</span>ZUU</a>                          
+        </div>                                      
+        <div class="nav-menu">           
+            <ul>                                                                              
+                <li class="dropdown">
+                    <a href="javascript:void(0)">WILDLIFE</a> 
+                    <div class="dropdown-content">                                                       
+                        <a href="animal.html">ANIMALS</a>                              
+                        <a href="ecosystem.html">ECOSYSTEMS</a>
+                        <a href="extinct.html">EXTINCT</a>                                                 
+                    </div>
+                </li>
+                <li>
+                    <a href="news.html">NEWS</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT US</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">MORE</a> 
+                    <div class="dropdown-content">                                                       
+                        <a href="javascript:void(0)">SHOP</a>                              
+                        <a href="publish.html">PUBLISH</a>
+                        <a href="gallery.html">GALERRY ANIMALS</a>                                                 
+                        <a href="donate.html">DONATE</a>                                                 
+                    </div>
+                </li>                
+                <li>
+                    <a href="#"><button class="btn-login">Login</button></a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+       
+      <!-- menu mobile -->
+      <div style="font-size:30px;cursor:pointer" id="menuBar" onclick="openNav()">&#9776;</div>
+      <div id="menu-mobile" class="nav-mobile">     
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>        
+        <ul>                                                                              
+          <li class="details">
+              <a href="javascript:void(0)">WILDLIFE</a> 
+              <div class="details-items">                                                       
+                  <a href="animal.html">ANIMALS</a>                              
+                  <a href="ecosystem.html">ECOSYSTEMS</a>
+                  <a href="extinct.html">EXTINCT</a>                                                 
+              </div>
+          </li>
+          <li>
+              <a href="news.html">NEWS</a>
+          </li>
+          <li>
+              <a href="about.html">ABOUT US</a>
+          </li>  
+          <li class="dropdown">
+            <a href="javascript:void(0)">MORE</a> 
+            <div class="dropdown-content">                                                       
+                <a href="javascript:void(0)">SHOP</a>                              
+                <a href="publish.html">PUBLISH</a>
+                <a href="gallery.html">GALERRY ANIMALS</a>                                                 
+                <a href="donate.html">DONATE</a>                                                 
+            </div>
+        </li>         
+          <button class="btn-login">Login</button>
+        </ul> 
+      </div>   
+      
+      <!-- CONTENT -->
+      <section class="d-flex type-shop align-items-center">
+          <div class="cover-circle p-0">
+              <img src="asset/img/book.png">
+              <span class="circle"></span>
+              <span class="ring"></span>
+              <span class="circle-dot"></span>
+          </div>
+
+          <div class="caption">
+              <h1>
+                Buy Our Products to Extending 
+                Your Knowledge About Animal
+              </h1>
+              
+              <a href="#">Book Collection</a>
+              <a href="#">DVD Collection</a>
+    
+              <em>type of products</em>
+          </div>
+      </section>  
+      
+    <section class="container-fluid product-branch px-5 py-2">                    
+        <div class="nextPrev">
+            <a class="prev mr-5" onclick="plusSlides(-1)">Prev</a>
+            <a class="next" onclick="plusSlides(1)">Next</a>                 
+        </div>
+<!-- 
+        <div class="details">
+            <a class="closebtn" id="close">&times;</a>
+            <div class="body-btn mb-3">
+                <button class="fitur mx-3"><i class="fas fa-share"></i></button>
+                <button class="fitur mx-3"><i class="fas fa-comments"></i></button>
+                <button class="fitur mx-3"><i class="fas fa-thumbs-up"></i></button>
+            </div>
+            
+            <div class="row">
+                <div class="col img-product">                    
+                    <img src="asset/img/jaguar-book.jpeg" width="100%">                                         
+                </div>
+                <div class="col">
+                    <h2>All About Jaguar</h2>
+                    <h3>Bernard Rowcels</h3>
+                    <p>NewYork <span>2003</span></p>
+                    <div class="star">
+                        <i class=""></i>
+                        <i class=""></i>
+                        <i class=""></i>
+                        <i class=""></i>
+                        <i class=""></i>
+                    </div>
+                    <p>6,5 / 200.300</p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos aliquid enim 
+                        hic in maiores, culpa soluta eum? Quaerat alias, natus id obcaecati ex reprehenderit neque eum ipsa consequatur nam!
+                        natus id obcaecati ex reprehenderit neque eum ipsa                             
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <span class="slice"></span>
+                        <h1>$20.30</h1>
+                        <p class="discount">Discount <br> 50%</p>
+                    </div>
+                    <div class="row ">
+
+                        <div class="col">
+                            Stock
+                            <div class="count">1220 <span>pts</span>pts</div>
+                        </div>
+                        <div class="col">
+                            Order
+                            <div class="upDown">
+                                <a href="" class="up"></a>
+                                <a href="" class="down"></a>
+                            </div>
+                            <div class="count">1</div>
+                        </div>
+                    </div>
+                    <button class="add-cart">Add to Cart <i class=""></i></button>
+                </div>
+            </div>            
+        </div> -->
+
+        <div class="row">
+            <div class="col-5 mr-5">
+                <div class="tools mb-5">
+                    <div class="filter mr-5">
+                        <button type="button" class="filterBtn">Filter <i></i></button>            
+                        
+                        <div class="filter-env">
+                            <div class="row row-cols-3 px-5 py-3">
+                                <div class="col-3 my-2 p-0">
+                                    <a href="" class="item">Pets</a>
+                                </div>
+                                <div class="col-5 my-2 p-0">
+                                    <a href="" class="item">Popular</a>
+                                </div>
+                                <div class="col-3 my-2 p-0">
+                                    <a href="" class="item">Dinosaur</a>
+                                </div>
+                                <!-- <div class="w-100"></div> -->
+                                <div class="col-3 my-2 p-0">
+                                    <a href="" class="item">Wild</a>
+                                </div>
+                                <div class="col-5 my-2 p-0">
+                                    <a href="" class="item">Top Rating</a>
+                                </div>
+                                <div class="col-3 my-2 p-0">
+                                    <a href="" class="item">Science</a>
+                                </div>
+                                <div class="col-3 my-2 p-0">
+                                    <a href="" class="item">Farm</a>
+                                </div>
+                                <div class="col-5 my-2 p-0">
+                                    <a href="" class="item">Free</a>
+                                </div>
+                                <div class="col-3 my-2 p-0">
+                                    <a href="" class="item">New</a>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="m-0">Book Collection</h2>
+                </div>
+                <h3 class="mb-3 ml-5">All</h3>
+                <div class="row album ml-3">            
+                    <div class="col-3 product p-0 mx-3 mb-4">
+                        <span class="hover"></span>
+                        <img src="asset/img/donkey-book.jpeg" width="100%">
+                    </div>
+                    <div class="col-3 product p-0 mx-3 mb-4">
+                        <span class="hover"></span>
+                        <img src="asset/img/donkey-book.jpeg" width="100%">
+                    </div>
+                    <div class="col-3 product p-0 mx-3 mb-4">
+                        <span class="hover"></span>
+                        <img src="asset/img/donkey-book.jpeg" width="100%">
+                    </div> 
+                    <div class="col-3 product p-0 mx-3 mb-4">
+                        <span class="hover"></span>
+                        <img src="asset/img/donkey-book.jpeg" width="100%">
+                    </div>                      
+                </div>
+        
+                <h3 class="mb-3 ml-5 mt-3">Bookmark</h3>
+                <div class="row row-cols-3 album ml-3">            
+                    <div class="col-3 product mx-3 mb-4">
+                        <span class="hover"></span>
+                        <img src="asset/img/donkey-book.jpeg" width="100%">
+                    </div>
+                    <div class="col-3 product mx-3 mb-4">
+                        <span class="hover"></span>
+                        <img src="asset/img/donkey-book.jpeg" width="100%">
+                    </div>                   
+                </div>
+            </div>
+ 
+            <div class="col-6 ml-5">                                  
+                <svg xmlns="http://www.w3.org/2000/svg" width="678.726" height="581.415" viewBox="0 0 678.726 581.415" class="spiral-bottom">
+                    <g id="Path_2" data-name="Path 2" transform="matrix(0.998, 0.07, -0.07, 0.998, 121.574, 42.08)" fill="none">
+                      <path d="M407-35.333c82.083-10,168.75,77.917,145,158.333S429.083,192.167,312,286.333,181.583,483.417,83.667,499.667-114.667,435.5-79.667,351.333,102,259.667,223.667,163,324.917-25.333,407-35.333Z" stroke="none"/>
+                      <path d="M 419.9617919921875 -31.11398315429688 C 415.8140869140625 -31.11398315429688 411.6565246582031 -30.86370849609375 407.6046142578125 -30.37008666992188 C 397.8791809082031 -29.18527221679688 389.5271606445313 -26.80181884765625 382.0714416503906 -23.08352661132813 C 375.2601623535156 -19.68673706054688 369.1366271972656 -15.12826538085938 363.3507080078125 -9.14764404296875 C 352.072998046875 2.5096435546875 343.0518798828125 18.59564208984375 332.6062622070313 37.22164916992188 C 322.4806213378906 55.27719116210938 311.0039672851563 75.74172973632813 294.534423828125 97.739013671875 C 275.4573364257813 123.2190856933594 253.2937164306641 145.8466491699219 226.7769012451172 166.9148254394531 C 172.1113586425781 210.34765625 112.764892578125 235.8161926269531 60.404541015625 258.2865600585938 C 44.12408447265625 265.2732849121094 28.74652099609375 271.87255859375 14.35525512695313 278.64501953125 C -1.711456298828125 286.205810546875 -14.2137451171875 292.8849182128906 -24.99020385742188 299.6644592285156 C -37.4163818359375 307.4818115234375 -47.36502075195313 315.3583679199219 -55.404541015625 323.7440795898438 C -59.67083740234375 328.1940002441406 -63.4586181640625 332.8733520507813 -66.662841796875 337.6521911621094 C -69.9818115234375 342.602294921875 -72.80364990234375 347.8511962890625 -75.04998779296875 353.2531127929688 C -80.916259765625 367.360107421875 -82.96453857421875 381.798095703125 -81.1378173828125 396.1659240722656 C -80.27557373046875 402.9483642578125 -78.53448486328125 409.7381896972656 -75.96307373046875 416.346923828125 C -73.45062255859375 422.8041076660156 -70.1158447265625 429.1671752929688 -66.0513916015625 435.25927734375 C -60.11444091796875 444.1577453613281 -52.64111328125 452.4851989746094 -43.83892822265625 460.0101013183594 C -35.083740234375 467.4948120117188 -25.17208862304688 474.0522766113281 -14.37945556640625 479.5001831054688 C -3.4405517578125 485.0220031738281 8.209716796875 489.3043823242188 20.24771118164063 492.2284545898438 C 32.66561889648438 495.2448120117188 45.34188842773438 496.7742004394531 57.92462158203125 496.7742004394531 C 66.30581665039063 496.7742004394531 74.691162109375 496.0878295898438 82.847900390625 494.7341003417969 C 89.48590087890625 493.6324462890625 95.92718505859375 492.0733642578125 101.9927978515625 490.1000061035156 C 107.8244323730469 488.2028198242188 113.5308837890625 485.85009765625 118.95361328125 483.107177734375 C 129.1251831054688 477.9621887207031 138.7192687988281 471.2884521484375 148.2839050292969 462.7045593261719 C 156.6102600097656 455.2319946289063 164.906982421875 446.3556518554688 174.3942565917969 434.7702026367188 C 182.9460754394531 424.3269958496094 191.4615478515625 412.907470703125 200.4768981933594 400.8175659179688 C 227.7274475097656 364.2735595703125 258.6138305664063 322.8537292480469 308.8663330078125 282.4371032714844 C 360.7661743164063 240.6956481933594 409.6490783691406 219.2555541992188 448.9272766113281 202.0281982421875 C 474.0270690917969 191.0193786621094 495.7040710449219 181.5118103027344 512.5390625 169.3409118652344 C 521.2509765625 163.0426330566406 528.1746215820313 156.3834533691406 533.7056274414063 148.98291015625 C 539.7212524414063 140.933837890625 544.1369018554688 131.9715576171875 547.2047119140625 121.5838317871094 C 549.5796508789063 113.5426330566406 550.8489990234375 105.1772766113281 550.9775390625 96.72018432617188 C 551.1011962890625 88.58981323242188 550.173828125 80.27810668945313 548.22119140625 72.0157470703125 C 546.3285522460938 64.00753784179688 543.4606323242188 55.98727416992188 539.697021484375 48.17782592773438 C 536.0172729492188 40.5423583984375 531.4712524414063 33.08465576171875 526.18505859375 26.01162719726563 C 519.9513549804688 17.670654296875 512.732421875 9.910369873046875 504.7287292480469 2.946380615234375 C 496.705810546875 -4.03436279296875 488.0008850097656 -10.12210083007813 478.8556213378906 -15.1478271484375 C 469.5371704101563 -20.26864624023438 459.8603515625 -24.23025512695313 450.093994140625 -26.92254638671875 C 440.0050659179688 -29.70382690429688 429.8671875 -31.11398315429688 419.9617919921875 -31.11398315429688 M 419.9617919921875 -36.11395263671875 C 497.8922729492188 -36.11395263671875 574.5033569335938 46.80438232421875 552 123 C 528.25 203.4166564941406 429.0833435058594 192.1666564941406 312 286.3332824707031 C 194.9166259765625 380.5 181.5831604003906 483.4166259765625 83.66653442382813 499.6666259765625 C 75.0784912109375 501.0918884277344 66.45809936523438 501.7742309570313 57.92465209960938 501.7742309570313 C -30.83621215820313 501.7742309570313 -111.5969848632813 428.1178588867188 -79.666748046875 351.3332824707031 C -44.666748046875 267.1666259765625 101.9998168945313 259.6666259765625 223.6665344238281 163 C 345.3331604003906 66.3333740234375 324.9166259765625 -25.33334350585938 407 -35.33334350585938 C 411.3085632324219 -35.85824584960938 415.6445922851563 -36.11395263671875 419.9617919921875 -36.11395263671875 Z" stroke="none" fill="#363636"/>
+                    </g>
+                </svg>                         
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="621.274" height="472.16" viewBox="0 0 621.274 472.16" class="spiral-top">
+                    <path id="Path_3" data-name="Path 3" d="M2324,553c35,21.667,79.333,61.277,159.333,28.667s84.167-105.833,190-178.333,189-85.333,235-113.333,45.667-120.333-11-163.667" transform="translate(-2322.684 -124.347)" fill="none" stroke="#363636" stroke-width="5"/>
+                </svg> 
+
+                <span class="shadow1"></span>
+                <span class="shadow2"></span>
+                <div class="row slideshow row-cols-1 justify-content-center">
+                    <div class="mySlides col-7">
+                        <span class="hover"></span>
+                        <img src="./asset/img/fox-book.jpg" width="100%">
+                    </div>
+                    <div class="mySlides col-7">
+                        <img src="./asset/img/fox-book.jpg" width="100%">
+                    </div>
+                    <div class="mySlides col-7">
+                        <img src="./asset/img/fox-book.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>                 
+    </section>
+
+      <!-- FOOTER -->
+      <div class="container-fluid footer">        
+        <div class="row align-items-center footer-top py-4">
+            <div class="col-sm-2 logo middle">
+              <span>PA</span>ZUU
+            </div>
+            <div class="col-sm-5 middle">
+                <div class="list-icon">
+                    <h3>Support</h3>
+                    <img src="asset/Icon/wwf.png">
+                    <img src="asset/Icon/stikom.png" style="width: 25px;">
+                    <img src="asset/Icon/gsc.png">
+                    <img src="asset/Icon/yabi.png">
+                </div>
+            </div>
+            <div class="col-sm-5 middle">
+                <div class="list-icon">
+                    <h3>Source Products</h3>
+                    <img src="asset/Icon/pexels.png">
+                    <img src="asset/Icon/gFont.png">
+                    <img src="asset/Icon/fontAwesome.png">
+                    <img src="asset/Icon/w3.png">
+                </div>
+            </div>
+        </div>  
+      
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row footer-bottom row-cols-2 row-cols-lg-4 px-5 py-4">
+            <div class="col-8 col-sm-4 pb-lg-0 pb-5">
+                <div class="about-field">
+                    <h3>About Us</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos aliquid enim hic in maiores, culpa soluta eum? Quaerat alias, natus id obcaecati ex reprehenderit neque eum ipsa consequatur nam! </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos aliquid enim hic in maiores, culpa soluta eum? Quaerat alias, natus id obcaecati ex reprehenderit neque eum ipsa consequatur nam!</p>                
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos aliquid enim hic in maiores, culpa soluta eum?</p> 
+                </div>                      
+            </div>            
+            <div class="col col-sm-2">
+                <h3>Data Log</h3>
+                <ul><span>Animals</span>
+                    <li><a href="#">Mamalia</a></li>
+                    <li><a href="#">Reptile</a></li>
+                    <li><a href="#">Pieces</a></li>
+                    <li><a href="#">Amfibi</a></li>
+                </ul>
+                <ul><span>Habitat</span>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">North America</a></li>
+                    <li><a href="#">Indonesia</a></li>
+                    <li><a href="#">Australia</a></li>
+                </ul>
+            </div>
+
+            <div class="col col-sm-2 col-sm-4 pb-lg-0 pb-5 service-field">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>                
+                    <li><a href="#">Privacy policy</a></li>                
+                    <li><a href="#">Contact</a></li>
+                    <li><a href= "#">About Us</a></li>                
+                </ul>
+                
+                <h3>Developer</h3>
+                <p>I Komang Widnyana <br> FullStack</p>               
+                
+                <h3>Social Media</h3>                
+                <a href="#"><img src="asset/Icon/twitter.png"></a> 
+                <a href="#"><img src="asset/Icon/behance.png"></a> 
+                <a href="#"><img src="asset/Icon/linkedin.png"></a> 
+                <a href="#"><img src="asset/Icon/github.png"></a> 
+            </div>
+
+            <div class="col-10 col-sm-4 signup-form">
+                <h2>Sign up</h2>
+                <p>please pick your email in this field to get  more info between your email</p>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="email address">
+                    <input type="password" name="pass" id="pass" placeholder="password">
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+
+        <div class="row px-5 py-3 license justify-content-center">
+            <div class="col-9 col-lg-12">
+                <p>© 2019 Ikovid.ID, All right deserved</p>
+            </div>
+        </div>      
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="./js/shop.js"></script>
+</body>
+</html>

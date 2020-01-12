@@ -1,0 +1,233 @@
+
+%center{
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+}
+
+$ease: all .5s ease;
+
+%flex-center{
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+%flex-between{
+  display: flex;    
+  justify-content: space-between;    
+  align-items: center;
+}
+
+%btn{     
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto";
+  cursor: pointer;
+  outline: none;    
+  color: white; 
+}
+
+.bg-cover{
+    background-color: yellow;    
+}
+
+.head-content, .bdy-content{
+    height: 100vh;
+}
+
+.head-content{    
+    background-image: url('../asset/img/ecosystem.jpg');     
+    background-size:95% 100%;    
+    background-repeat: no-repeat;
+    background-position-y: -10vh;
+    background-position-x: center;
+    @extend %flex-center;    
+
+    h1, p{
+        font-family: "Montserrat";                
+    }
+    
+    h1{        
+        letter-spacing: 40px;
+        font-size: 60px;        
+        font-weight: normal;
+    }
+
+    p{
+        letter-spacing: 10px;
+        font-size: 14px;
+        margin-left: -20px;
+        color: white;
+    }    
+}
+
+.nav-page{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);    
+    @extend %flex-center;
+    justify-content: start;  
+    cursor: pointer;      
+    
+    .circle-btn{              
+        position: absolute;    
+        background: #141414;
+        width: 34px;
+        height: 34px;            
+        border-radius: 40px;                        
+        animation: normal;
+        box-shadow: #D9395F 0 0 2px;        
+
+        &::before, &::after{
+            content: "";            
+            border-radius: 40px;
+            @extend %center;
+            background: transparent;
+            box-shadow: #000000 0 0 20px;        
+        }
+
+        &::before{
+            z-index: 1;
+            width: 27px;
+            height: 27px;                       
+        }
+
+        &::after{
+            z-index: 2;
+            width: 18px;
+            height: 18px;                     
+        }
+    }   
+    
+    .body-link{
+        height: 0;
+        width: 0;
+        padding: 0;        
+        padding-top: 0;               
+        background-color: #141414;
+        margin-top: 16px;
+        border-radius: 50px; 
+        overflow: hidden;         
+        transition: all .6s cubic-bezier(0.785, 0.135, 0.15, 0.86);        
+
+        ul{
+            list-style: none;                        
+
+            li{                
+                margin: 0 27px;
+                float: left;
+
+                a{
+                    text-decoration: none;
+                    color: #D5D5D5;                                                            
+                }
+
+                &:hover a{
+                    color: #D9395F;
+                }
+            }
+        }
+    }   
+
+    &:hover .circle-btn{
+        background: linear-gradient(to bottom, #D9395F -30%, #020202, #D9395F 130%);               
+        animation: scale .7s cubic-bezier(0.55, 0.085, 0.68, 0.53) alternate infinite;                
+    }
+
+    &:hover .circle-btn::before{
+        background: linear-gradient(to bottom, #D9395F, #602A9D);                    
+    }
+
+    &:hover .circle-btn::after{
+        background: linear-gradient(to bottom, #D9395F, rgba(96, 42, 157, 1%));                    
+    }
+     
+    .show{        
+        width: auto;
+        height: 70px;
+        padding: 20px;
+        padding-top: 27px;
+    }    
+
+    @keyframes scale {
+        from{
+            transform: scale(1);                 
+        }           
+        to{
+            transform: scale(1.2);            
+        }
+    }    
+}
+
+.habitat-section{
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    background:blue;    
+}
+
+.line-bg{
+    position: absolute;   
+    left: 0;    
+
+}
+
+.bdy-content{
+    overflow: hidden;
+    h1{
+        font-size: 70px;
+        font-family: "Montserrat";       
+        font-weight: 600;         
+    }
+
+    h3{
+        font-size: 35px;        
+        margin-bottom: 30px;
+        font-weight: normal;
+        font-family: "Gelasio";
+    }   
+    
+    h5{
+        font-size: 16px;    
+        color: #6777C4;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-family: "Roboto";
+    }        
+
+    ul{
+        list-style: none; 
+        padding: 0;                            
+    }
+}
+
+.chart{
+    position: absolute;    
+    right: 5%;
+    bottom: 0;
+    transform: translate(-5%, 0);
+}
+
+.slideshow{
+    position: absolute;          
+    overflow: hidden;    
+    width: 100%;  
+    // background: blue;    
+
+    .view-slide{      
+        transform: translate(0, 4%);        
+    }
+}
+  
+.line{
+    height: 1px;    
+    width: 45px;
+    background-color: #808080;
+    float: left;
+    margin: 10px 8px;
+}

@@ -1,0 +1,312 @@
+.tools, .slideshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  font-family: "Gelasio";
+  font-size: 50px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.type-shop {
+  height: 120vh;
+  position: relative;
+  margin-top: -3%;
+}
+
+.cover-circle {
+  position: relative;
+}
+
+.cover-circle img {
+  margin-top: -3%;
+  margin-left: -32%;
+  width: 117%;
+}
+
+.cover-circle .circle, .cover-circle .ring, .cover-circle .circle-dot {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.cover-circle .circle {
+  top: 10%;
+  left: -7%;
+  background-color: #363636;
+  width: 546px;
+  height: 546px;
+  mix-blend-mode: saturation;
+}
+
+.cover-circle .ring {
+  top: -12%;
+  left: -17%;
+  border: 18px solid #4D4D4D;
+  border-right: 18px double #4D4D4D;
+  border-bottom: 5px dotted #4D4D4D;
+  width: 680px;
+  height: 680px;
+}
+
+.cover-circle .circle-dot {
+  bottom: 0;
+  left: 7%;
+  border-left: 14px dashed #363636;
+  border-top: 25px double #363636;
+  border-right: 14px solid #363636;
+  border-bottom: 5px solid #363636;
+  width: 590px;
+  height: 590px;
+}
+
+.caption h1 {
+  margin-top: -15vh;
+  margin-bottom: 12vh;
+}
+
+.caption a {
+  position: relative;
+  font-family: "Montserrat";
+  margin-left: 30%;
+  font-size: 16px;
+  color: #D5D5D5;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.caption a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #D9395F;
+  bottom: 20px;
+  left: -24%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.caption a:hover, .caption a .active {
+  font-size: 30px;
+  color: #D9395F;
+}
+
+.caption a:hover:before, .caption a .active {
+  width: 90px;
+}
+
+.caption em {
+  position: absolute;
+  bottom: 14%;
+  right: 2%;
+}
+
+.product-branch {
+  margin-top: 40vh;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.tools {
+  margin: 0;
+}
+
+.filter {
+  position: relative;
+  float: left;
+  margin-left: -23%;
+}
+
+.filter .filterBtn {
+  border: none;
+  width: 110px;
+  outline: none;
+  height: 48px;
+  background-color: #0F0F0F;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #D5D5D5;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.filter .filterBtn:hover {
+  background-color: transparent;
+  color: #D9395F;
+}
+
+.filter .filter-env {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  width: 0;
+  background-color: #0F0F0F;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-transition: all 0.6s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 0.6s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.filter .filter-env a {
+  color: #D5D5D5;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.filter .filter-env a:hover {
+  color: #D9395F;
+}
+
+.filter:hover .filter-env {
+  width: 300px;
+}
+
+.nextPrev {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(0);
+          transform: translateX(-50%) translateY(0);
+  z-index: 3;
+  bottom: 2%;
+  cursor: pointer;
+}
+
+.nextPrev .prev, .nextPrev .next {
+  color: #D5D5D5;
+  font-size: 13px;
+  font-family: "Roboto";
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.nextPrev .prev:hover, .nextPrev .next:hover {
+  font-size: 18px;
+  color: #D9395F;
+}
+
+.center {
+  background-color: red;
+}
+
+.album {
+  height: 48%;
+  overflow: hidden;
+}
+
+.album .product {
+  height: 42%;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 6px;
+}
+
+.spiral-bottom {
+  position: absolute;
+  z-index: 0;
+  bottom: 12%;
+  -webkit-transform: translate(-4%, -12%);
+          transform: translate(-4%, -12%);
+}
+
+.spiral-top {
+  position: absolute;
+  z-index: 1;
+  bottom: 15.5%;
+  display: block;
+  -webkit-transform: translate(3.6%, -15.5%);
+          transform: translate(3.6%, -15.5%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.spiral-top:hover {
+  z-index: unset;
+  display: none;
+}
+
+.shadow1, .shadow2 {
+  position: absolute;
+  width: 330px;
+  height: 110px;
+  z-index: 2;
+  left: 27%;
+}
+
+.shadow1 {
+  top: -1%;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(50%, rgba(0, 0, 0, 0.7)), to(transparent));
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.7) 50%, transparent);
+}
+
+.shadow2 {
+  bottom: 4%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, black), color-stop(50%, rgba(0, 0, 0, 0.7)), to(transparent));
+  background: linear-gradient(to top, black 10%, rgba(0, 0, 0, 0.7) 50%, transparent);
+}
+
+.slideshow {
+  position: absolute;
+  left: 67%;
+  -webkit-transform: translate(-75%, 0);
+          transform: translate(-75%, 0);
+  padding: 0;
+  width: 320px;
+  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.slideshow .mySlides {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  -webkit-transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin: 20px 0;
+}
+
+.slideshow .mySlides:nth-child(1) {
+  margin-top: 30%;
+}
+
+.slideshow .mySlides:nth-last-child {
+  margin-bottom: 30%;
+}
+
+.hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/*# sourceMappingURL=shop.css.map */
